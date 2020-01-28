@@ -139,7 +139,7 @@ export class PoDynamicFormBaseComponent {
    * ```
    */
   @Input('p-group-form') set groupForm(value: boolean) {
-    this._groupForm = <any> value === '' ? true : convertToBoolean(value);
+    this._groupForm = <any>value === '' ? true : convertToBoolean(value);
   }
 
   get groupForm(): boolean {
@@ -155,7 +155,7 @@ export class PoDynamicFormBaseComponent {
    *
    * Ao ser executado, irá receber como parâmetro o objeto informado no `p-value`.
    *
-   * O retorno desta função deve ser do tipo [PoDynamicFormLoad](documentation/po-dynamic-form#po-dynamic-form-load),
+   * O retorno desta função deve ser do tipo [PoPageOptions](documentation/po-dynamic-form#po-dynamic-form-load),
    * onde o usuário poderá determinar as novas atualizações dos campos, valores e determinar o campo a ser focado.
    *
    * Por exemplo:
